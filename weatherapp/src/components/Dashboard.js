@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getLatAndLong } from "../helpers";
-import { DisplayTime, DisplayWeatherDetails, SearchByCity } from "./index";
+import DisplayTime from "./DisplayTime";
+import DisplayWeatherDetails from "./DisplayWeatherDetails";
+import { SearchByCity } from "./SearchByCity";
 import { getWeatherDetails } from "../weather";
 
 const Dashboard = () => {

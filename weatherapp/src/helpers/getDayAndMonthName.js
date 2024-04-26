@@ -1,4 +1,4 @@
-const getDayAndMonthName = (dateString) => {
+export const getDayAndMonthName = (dateString) => {
   const dateObject = new Date(dateString);
 
   const date = dateObject.getDate();
@@ -7,4 +7,3 @@ const getDayAndMonthName = (dateString) => {
   return `${dayName}, ${date} ${monthName}`;
 };
 
-export default getDayAndMonthName;

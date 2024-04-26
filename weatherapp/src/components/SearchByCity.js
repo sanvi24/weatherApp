@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { getWeatherDetails } from "../weather";
 import { Search } from "../assests";
 
-const SearchByCity = () => {
+export const SearchByCity = () => {
 const dispatch = useDispatch()
   const [input, setInput] = useState("");
 
@@ -30,4 +30,3 @@ const dispatch = useDispatch()
   );
 };
 
-export default SearchByCity;

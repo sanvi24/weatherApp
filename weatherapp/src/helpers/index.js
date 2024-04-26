@@ -1,7 +1,4 @@
-import getDayAndMonthName from "./getDayAndMonthName";
+import { getDayAndMonthName } from "./getDayAndMonthName";
 import { getLatAndLong } from "./getLatAndLong";
 
-export {
-    getDayAndMonthName,
-    getLatAndLong
-};
+export { getDayAndMonthName, getLatAndLong };

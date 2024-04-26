@@ -4,4 +4,5 @@ import { getWeatherDetails } from "./weather.actions";
 export {
     weatherReducers,
     getWeatherDetails
-}
+};
+

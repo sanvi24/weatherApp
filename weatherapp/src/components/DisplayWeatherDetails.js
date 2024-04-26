@@ -1,5 +1,5 @@
 import React from "react";
-import { Humidity, WindSpeed, Pressure, UV } from "../assests";
+import { Humidity, UV, WindSpeed, Pressure } from "../assests";
 
 const DisplayWeatherDetails = ({ weatherDetails }) => {
   const { temp_c, condition, humidity, wind_kph, uv, pressure_mb } =
