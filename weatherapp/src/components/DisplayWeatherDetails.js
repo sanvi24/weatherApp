@@ -4,7 +4,7 @@ import { Humidity, UV, WindSpeed, Pressure } from "../assests";
 const DisplayWeatherDetails = ({ weatherDetails }) => {
   const { temp_c, condition, humidity, wind_kph, uv, pressure_mb } =
     weatherDetails?.current || {};
-  const { text, icon } = condition;
+  const { text, icon } = condition ? condition : {};
 
   return (
     <div className="flex flex-col sm:flex-row h-full sm:h-56 rounded-lg p-4 shadow-2xl bg-[#444444] gap-8">

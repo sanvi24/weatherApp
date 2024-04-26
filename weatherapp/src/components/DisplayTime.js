@@ -3,7 +3,7 @@ import { getDayAndMonthName } from "../helpers";
 
 const DisplayTime = ({ weatherDetails }) => {
   const { localtime, name } = weatherDetails?.location || {};
-  const [dateString, timeString] = localtime.split(" ");
+  const [dateString, timeString] = localtime ? localtime.split(" ") : [];
   const formattedDate = getDayAndMonthName(dateString);
   return (
     <div className="max-w-96 h-56 rounded-lg p-4 shadow-2xl bg-[#444444]">
